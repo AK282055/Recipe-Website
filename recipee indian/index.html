@@ -1,0 +1,2085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indian Recipe Collection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="logo.jpeg" alt="logo" id="logo" style="clip-path: circle(50%); height: 150px" />
+<img src="f chef.png" alt="" id="chef1" style="height: 200px">
+     
+      <img src="recip1.jpeg" alt="Image1" id="Image1" />
+      <img src="recip2.jpeg" alt="Image2" id="Image2" />
+      <h1>Indian Recipe Collection</h1>
+      <h2>Traditional Indian Recipes For Everyone</h2>
+      <div class="link">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        
+      
+      </div>
+    </div>
+  </div>
+  <!-- Update the header in your HTML-->
+  <header class="header">
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search for dishes or ingredients...">
+      <button id="searchBtn"><i class="fas fa-search"></i></button>
+    </div>
+  </header> 
+
+  <!-- Add this below the header -->
+  <div class="category-buttons">
+    <button class="active" data-category="all">All</button>
+    <button data-category="breakfast">Breakfast</button>
+    <button data-category="lunch">Lunch</button>
+    <button data-category="dinner">Dinner</button>
+    <button data-category="sweets">Sweets</button>
+    <button data-category="snacks">Snacks</button>
+  </div>
+
+  <!-- Example Food Card -->
+  <div class="recipe-card" data-category="breakfast">
+    <div class="card-details">
+      <h3>Poha</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 20 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+
+        <img src="po2.jpg" alt="poha" height="300px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hL-BnQF_gmI?si=1_36tvQ3YcHrdEJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe1')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe1">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 cups flattened rice (poha)</li>
+          <li>1 onion, finely chopped</li>
+          <li>1 green chili, chopped</li>
+          <li>1/2 teaspoon mustard seeds</li>
+          <li>1/2 teaspoon turmeric powder</li>
+          <li>8-10 curry leaves</li>
+          <li>1 medium potato, diced (optional)</li>
+          <li>1/2 teaspoon sugar</li>
+          <li>1 tablespoon peanuts</li>
+          <li>1 tablespoon lemon juice</li>
+          <li>1 tablespoon oil</li>
+          <li>Salt to taste</li>
+          <li>Fresh coriander leaves for garnish</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Rinse poha in a colander under running water for a few seconds. Let it sit for 5 minutes to soften.</li>
+          <li>Heat oil in a pan and add mustard seeds. Let them splutter.</li>
+          <li>Add peanuts and sauté until golden brown.</li>
+          <li>Add chopped onions, green chili, and curry leaves. Sauté until onions turn soft.</li>
+          <li>Add diced potatoes (if using) and cook until tender.</li>
+          <li>Add turmeric powder, salt, and sugar, and mix well.</li>
+          <li>Add the soaked poha and mix gently to coat it with the spices.</li>
+          <li>Cover and cook for 2 minutes on low flame.</li>
+          <li>Turn off the heat and add lemon juice.</li>
+          <li>Garnish with fresh coriander leaves and serve hot.</li>
+        </ol>
+      </div>
+
+    </div>
+   
+  </div>
+
+  <!-- Masala Dosa Recipe Card -->
+  <div class="recipe-card" data-category="breakfast">
+   
+    <div class="card-details">
+      <h3>Masala Dosa</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 45 mins</span>
+        <span><i class="fas fa-fire"></i> Hard</span>
+        <img src="dosa1.jpg" alt="dosa" height="300px" width="300px" margin-left="200px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rJSICjc5s84?si=lvs0H0aMQuNXFVwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe2')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe2">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>1 cup rice</li>
+          <li>1/2 cup urad dal (black gram)</li>
+          <li>1/2 teaspoon fenugreek seeds</li>
+          <li>Salt to taste</li>
+          <li>Oil or ghee for cooking</li>
+        </ul>
+        <h3>For the Masala Filling:</h3>
+        <ul class="ingredients-list">
+          <li>3 boiled potatoes, mashed</li>
+          <li>1 onion, finely chopped</li>
+          <li>1 green chili, chopped</li>
+          <li>1/2 teaspoon mustard seeds</li>
+          <li>1/2 teaspoon turmeric powder</li>
+          <li>8-10 curry leaves</li>
+          <li>1 tablespoon oil</li>
+          <li>Salt to taste</li>
+          <li>Fresh coriander for garnish</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Soak rice, urad dal, and fenugreek seeds for 6 hours. Grind to a smooth batter and ferment overnight.</li>
+          <li>For masala, heat oil, add mustard seeds, curry leaves, onion, and green chili. Sauté until soft.</li>
+          <li>Add turmeric, salt, and mashed potatoes. Mix well and cook for 2 minutes.</li>
+          <li>Heat a pan, spread dosa batter thinly, drizzle oil, and cook until crisp.</li>
+          <li>Place masala in the center, fold the dosa, and serve hot with chutney and sambar.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Idli Sambhar Recipe Card -->
+  <div class="recipe-card" data-category="breakfast">
+    <div class="card-details">
+      <h3>Idli Sambhar</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 40 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="idli1.jpg" alt="idli" height="300px" width="300px" margin-left="200px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/C_HqlzkWHo0?si=Eyvk8AGtHw5IMVfu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe3')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe3">
+        <h3>Ingredients for Idli:</h3>
+        <ul class="ingredients-list">
+          <li>2 cups rice</li>
+          <li>1 cup urad dal</li>
+          <li>1/2 teaspoon fenugreek seeds</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Ingredients for Sambar:</h3>
+        <ul class="ingredients-list">
+          <li>1/2 cup toor dal (pigeon peas)</li>
+          <li>1 onion, chopped</li>
+          <li>1 tomato, chopped</li>
+          <li>1/2 cup mixed vegetables</li>
+          <li>1/2 teaspoon mustard seeds</li>
+          <li>8-10 curry leaves</li>
+          <li>1 tablespoon sambar powder</li>
+          <li>1/2 teaspoon turmeric powder</li>
+          <li>Salt to taste</li>
+          <li>Fresh coriander for garnish</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Soak rice, urad dal, and fenugreek seeds for 6 hours. Grind to a smooth batter and ferment overnight.</li>
+          <li>Pour batter into idli molds and steam for 10 minutes.</li>
+          <li>For sambar, pressure cook dal with turmeric until soft.</li>
+          <li>Heat oil, add mustard seeds, curry leaves, onion, tomato, and vegetables. Sauté for 5 minutes.</li>
+          <li>Add cooked dal, sambar powder, salt, and simmer for 10 minutes.</li>
+          <li>Serve hot idlis with sambar and chutney.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Aloo Paratha Recipe Card -->
+  <div class="recipe-card" data-category="breakfast">
+    <div class="card-details">
+      <h3>Aloo Paratha</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 30 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="allu1.jpg" alt="allu paratha" height="300px" width="300px" margin-left="200px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9veUXkyqme0?si=oh5P4QJbzKcYl5_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe4')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe4">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 cups wheat flour</li>
+          <li>1/2 cup water</li>
+          <li>2 boiled potatoes, mashed</li>
+          <li>1 green chili, finely chopped</li>
+          <li>1 teaspoon cumin powder</li>
+          <li>1 teaspoon coriander powder</li>
+          <li>1 teaspoon garam masala</li>
+          <li>Salt to taste</li>
+          <li>2 tablespoons fresh coriander leaves</li>
+          <li>Butter or ghee for cooking</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Knead wheat flour with water into a soft dough. Let it rest for 20 minutes.</li>
+          <li>Mix mashed potatoes with spices, green chili, and coriander.</li>
+          <li>Roll out dough, place filling, seal edges, and roll again.</li>
+          <li>Cook on a hot tawa with ghee until golden brown on both sides.</li>
+          <li>Serve hot with butter, curd, or pickle.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 1. Bread Roll -->
+  <div class="recipe-card" data-category="breakfast">
+    <div class="card-details">
+      <h3>Bread Roll</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 25 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="bread roll1.jpg" alt="bread roll" height="300px" width="300px" >
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/o74iIjiUNQg?si=wS_Dwt1tLWeClGUt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe5')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe5">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>4 slices of bread</li>
+          <li>2 boiled potatoes, mashed</li>
+          <li>1 green chili, finely chopped</li>
+          <li>1/2 teaspoon cumin powder</li>
+          <li>1/2 teaspoon chaat masala</li>
+          <li>Salt to taste</li>
+          <li>Oil for deep frying</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Mix mashed potatoes with spices and green chili.</li>
+          <li>Trim bread edges and dip briefly in water.</li>
+          <li>Place filling inside, roll tightly, and seal.</li>
+          <li>Deep fry until golden brown and crispy.</li>
+          <li>Serve hot with ketchup or chutney.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 2. Poori Sabji -->
+  <div class="recipe-card" data-category="breakfast">
+    <div class="card-details">
+      <h3>Poori Sabji</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 30 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="puri sabji.jpg" alt="poori sabji" height="300px" width="300px" >
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oayceo7tHBI?si=FPXJvNNYkW_36uwZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe6')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe6">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 cups wheat flour</li>
+          <li>1/2 teaspoon salt</li>
+          <li>Water for kneading</li>
+          <li>Oil for deep frying</li>
+        </ul>
+        <h3>For Sabji:</h3>
+        <ul class="ingredients-list">
+          <li>2 boiled potatoes, chopped</li>
+          <li>1 onion, chopped</li>
+          <li>1 tomato, chopped</li>
+          <li>1/2 teaspoon cumin seeds</li>
+          <li>1/2 teaspoon turmeric powder</li>
+          <li>1/2 teaspoon garam masala</li>
+          <li>Salt to taste</li>
+          <li>1 tablespoon oil</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Knead wheat flour with water into a stiff dough. Rest for 15 minutes.</li>
+          <li>Roll out small puris and deep fry until golden.</li>
+          <li>For sabji, heat oil, add cumin, onions, and tomatoes.</li>
+          <li>Add boiled potatoes, spices, and cook for 5 minutes.</li>
+          <li>Serve hot puris with sabji.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 3. Mix Paratha -->
+  <div class="recipe-card" data-category="breakfast">
+    <div class="card-details">
+      <h3>Mix Paratha</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 20 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="mix parath.jpg" alt="mix-paratha" height="300px" width="300px" >
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wnb4BWFBtxU?si=CRYmt6XXwLlyzQ5K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe7')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe7">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 cups wheat flour</li>
+          <li>1/2 cup grated carrot</li>
+          <li>1/2 cup finely chopped spinach</li>
+          <li>1/4 cup grated paneer</li>
+          <li>1 green chili, finely chopped</li>
+          <li>1/2 teaspoon cumin powder</li>
+          <li>1/2 teaspoon chaat masala</li>
+          <li>Salt to taste</li>
+          <li>Ghee or butter for cooking</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Mix all ingredients with wheat flour and knead into a soft dough.</li>
+          <li>Roll into small discs and cook on a hot tawa.</li>
+          <li>Apply ghee and cook until golden brown.</li>
+          <li>Serve hot with curd or pickle.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 4. Paneer Paratha -->
+  <div class="recipe-card" data-category="breakfast">
+    <div class="card-details">
+      <h3>Paneer Paratha</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 25 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="paner 1.jpg" alt="pneer" height="300px" width="300px" >
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/v6zxT1Lgc90?si=ksVHgcpwMOeYq07K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe8')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe8">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 cups wheat flour</li>
+          <li>1 cup grated paneer</li>
+          <li>1 green chili, finely chopped</li>
+          <li>1/2 teaspoon cumin powder</li>
+          <li>1/2 teaspoon garam masala</li>
+          <li>Salt to taste</li>
+          <li>Fresh coriander for garnish</li>
+          <li>Ghee or butter for cooking</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Knead wheat flour with water into a soft dough.</li>
+          <li>Mix grated paneer with spices and green chili.</li>
+          <li>Roll out dough, place paneer filling, seal edges, and roll again.</li>
+          <li>Cook on a tawa with ghee until golden brown.</li>
+          <li>Serve hot with butter or chutney.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 5. Onion Paratha -->
+  <div class="recipe-card" data-category="breakfast">
+   
+    <div class="card-details">
+      <h3>Onion Paratha</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 20 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="mix parath.jpg" alt="Onion Paratha" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IoM7OFYCVb8?si=NrHOsXZLvADb-lwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe9')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe9">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 cups wheat flour</li>
+          <li>1 large onion, finely chopped</li>
+          <li>1 green chili, finely chopped</li>
+          <li>1/2 teaspoon ajwain (carom seeds)</li>
+          <li>1/2 teaspoon cumin powder</li>
+          <li>Salt to taste</li>
+          <li>Ghee or butter for cooking</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Mix all ingredients with wheat flour and knead into a dough.</li>
+          <li>Roll into small discs and cook on a hot tawa.</li>
+          <li>Apply ghee and cook until crispy and golden brown.</li>
+          <li>Serve hot with curd or pickle.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 6. Gobhi Paratha -->
+  <div class="recipe-card" data-category="breakfast">
+    <div class="card-details">
+      <h3>Gobhi Paratha</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 25 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="gobi.jpg" alt="gobi" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1kGQIs7fycA?si=T298JymiYZD2t5_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe10')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe10">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 cups wheat flour</li>
+          <li>1 cup grated cauliflower</li>
+          <li>1 green chili, finely chopped</li>
+          <li>1/2 teaspoon cumin powder</li>
+          <li>1/2 teaspoon turmeric powder</li>
+          <li>Salt to taste</li>
+          <li>Fresh coriander for garnish</li>
+          <li>Ghee or butter for cooking</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Mix all ingredients with wheat flour and knead into a soft dough.</li>
+          <li>Roll into small discs and cook on a hot tawa.</li>
+          <li>Apply ghee and cook until crispy and golden brown.</li>
+          <li>Serve hot with butter or curd.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 7. Plain Paratha -->
+  <div class="recipe-card" data-category="breakfast">
+    <div class="card-details">
+      <h3>Plain Paratha</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 15 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="plan partha.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wFpzWcUcXJg?si=YFSU1Uh1nU5B7Ton" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe11')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe11">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 cups wheat flour</li>
+          <li>1/2 teaspoon salt</li>
+          <li>Water (as needed)</li>
+          <li>Ghee or oil for cooking</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>In a bowl, mix wheat flour and salt.</li>
+          <li>Gradually add water and knead into a smooth dough.</li>
+          <li>Divide the dough into small portions and roll into thin circles.</li>
+          <li>Heat a tawa and cook the paratha on both sides.</li>
+          <li>Apply ghee and cook until golden brown and slightly crispy.</li>
+          <li>Serve hot with pickle, curd, or any curry.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--        LUNCH     Recipe Card -->
+  <!-- Rajma Chawal Recipe Card -->
+  <div class="recipe-card" data-category="lunch">
+    
+    <div class="card-details">
+      <h3>Rajma Chawal</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 45 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="rajma chwal.jpeg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4s98pg45GrM?si=SKaTMs377HoOLjgp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe12')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe12">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>1 cup kidney beans (rajma), soaked overnight</li>
+          <li>2 onions, finely chopped</li>
+          <li>2 tomatoes, pureed</li>
+          <li>1 tsp ginger-garlic paste</li>
+          <li>1/2 tsp turmeric powder</li>
+          <li>1 tsp cumin seeds</li>
+          <li>1 tsp garam masala</li>
+          <li>2 tbsp oil</li>
+          <li>Salt to taste</li>
+          <li>2 cups cooked rice</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Pressure cook the soaked rajma until soft.</li>
+          <li>Heat oil, add cumin seeds, and sauté onions.</li>
+          <li>Add ginger-garlic paste and tomato puree, cook until oil separates.</li>
+          <li>Add turmeric, salt, and garam masala. Mix well.</li>
+          <li>Add cooked rajma with some water and simmer for 15 minutes.</li>
+          <li>Serve hot with steamed rice.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+  <!-- Dal Tadka Recipe Card -->
+  <div class="recipe-card" data-category="lunch">
+    <div class="card-details">
+      <h3>Dal Tadka</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 40 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="dal tadka.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bX85YSdoSH8?si=R8VZFIKyWBNxvCqd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe13')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe13">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>1 cup toor dal (pigeon pea lentils)</li>
+          <li>1 tomato, chopped</li>
+          <li>1 onion, chopped</li>
+          <li>2 cloves garlic, minced</li>
+          <li>1/2 tsp turmeric powder</li>
+          <li>1 tsp mustard seeds</li>
+          <li>1 tsp cumin seeds</li>
+          <li>2 tbsp ghee</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Cook dal in a pressure cooker with turmeric and salt.</li>
+          <li>In a pan, heat ghee, add mustard and cumin seeds.</li>
+          <li>Add onions, garlic, and tomatoes, sauté until soft.</li>
+          <li>Mix this tempering with the dal and simmer for 5 minutes.</li>
+          <li>Serve hot with rice or roti.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+  <!-- Mix Veg Recipe Card -->
+  <div class="recipe-card" data-category="lunch">
+    <div class="card-details">
+      <h3>Mix Veg</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 35 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="mix veg.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/V4Ikh2PhuXo?si=BztcYfve0f8YE5lq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe14')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe14">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>1 cup mixed vegetables (carrot, beans, peas, capsicum)</li>
+          <li>1 onion, chopped</li>
+          <li>1 tomato, chopped</li>
+          <li>1 tsp ginger-garlic paste</li>
+          <li>1/2 tsp turmeric powder</li>
+          <li>1 tsp garam masala</li>
+          <li>2 tbsp oil</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Heat oil, sauté onions and ginger-garlic paste.</li>
+          <li>Add tomatoes and cook until soft.</li>
+          <li>Add vegetables, turmeric, salt, and garam masala.</li>
+          <li>Cover and cook until vegetables are tender.</li>
+          <li>Serve hot with roti or rice.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Chole Bhature Recipe Card -->
+  <div class="recipe-card" data-category="lunch">
+    <div class="card-details">
+      <h3>Chole Bhature</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 50 mins</span>
+        <span><i class="fas fa-fire"></i> Hard</span>
+        <img src="chole bhatue.jpeg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FU1ZVLMbWjA?si=-D733OtbO2mAtows" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe15')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe15">
+        <h3>Ingredients (Chole):</h3>
+        <ul class="ingredients-list">
+          <li>1 cup chickpeas (chole), soaked overnight</li>
+          <li>1 onion, chopped</li>
+          <li>2 tomatoes, pureed</li>
+          <li>1 tsp cumin seeds</li>
+          <li>1 tsp garam masala</li>
+          <li>1 tsp coriander powder</li>
+          <li>2 tbsp oil</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Ingredients (Bhature):</h3>
+        <ul class="ingredients-list">
+          <li>2 cups all-purpose flour</li>
+          <li>1/2 cup yogurt</li>
+          <li>1/2 tsp salt</li>
+          <li>Water (as needed)</li>
+          <li>Oil for frying</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Cook chickpeas in a pressure cooker.</li>
+          <li>Heat oil, add cumin, onions, and tomato puree.</li>
+          <li>Add spices, then add chickpeas and cook for 10 minutes.</li>
+          <li>For bhature, knead dough with flour, yogurt, and salt.</li>
+          <li>Roll and deep-fry into golden puffed bread.</li>
+          <li>Serve hot with chole.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+  <!-- Paneer Butter Masala Recipe Card -->
+  <div class="recipe-card" data-category="lunch">
+    <div class="card-details">
+      <h3>Paneer Butter Masala</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 40 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="paner buterr.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bUounn_Bmy4?si=gsnBoYpxWuj14Qsx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe16')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe16">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>200g paneer, cubed</li>
+          <li>2 tomatoes, pureed</li>
+          <li>1 onion, finely chopped</li>
+          <li>2 tbsp butter</li>
+          <li>1 tsp ginger-garlic paste</li>
+          <li>1/2 tsp turmeric powder</li>
+          <li>1 tsp garam masala</li>
+          <li>1/2 cup fresh cream</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Heat butter, sauté onions and ginger-garlic paste.</li>
+          <li>Add tomato puree and cook until oil separates.</li>
+          <li>Add turmeric, salt, garam masala, and cream.</li>
+          <li>Add paneer cubes, mix well, and cook for 5 minutes.</li>
+          <li>Serve hot with naan or roti.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Aloo Ki Sabji Recipe Card -->
+  <div class="recipe-card" data-category="lunch">
+    
+    <div class="card-details">
+      <h3>Aloo Ki Sabji</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 30 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="allu ki sabji.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qXtImrtm2h8?si=gFX0M4g_pqAQ09Vk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe18')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe18">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>3 potatoes, boiled and cubed</li>
+          <li>1 onion, chopped</li>
+          <li>1 tomato, chopped</li>
+          <li>1 tsp cumin seeds</li>
+          <li>1/2 tsp turmeric powder</li>
+          <li>1 tsp garam masala</li>
+          <li>2 tbsp oil</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Heat oil, add cumin seeds and onions.</li>
+          <li>Add tomatoes, turmeric, and garam masala.</li>
+          <li>Add potatoes and mix well.</li>
+          <li>Cook for 5-7 minutes and serve hot.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Matar Paneer Recipe Card -->
+  <div class="recipe-card" data-category="lunch">
+    
+    <div class="card-details">
+      <h3>Matar Paneer</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 40 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="matter paneer.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yV3FkP_bcRc?si=frczA2ABtXpF8x8x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe19')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe19">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>200g paneer, cubed</li>
+          <li>1/2 cup green peas</li>
+          <li>2 tomatoes, pureed</li>
+          <li>1 onion, chopped</li>
+          <li>1 tsp ginger-garlic paste</li>
+          <li>1 tsp cumin seeds</li>
+          <li>1 tsp garam masala</li>
+          <li>2 tbsp oil</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Heat oil, sauté onions, and cumin seeds.</li>
+          <li>Add ginger-garlic paste and tomato puree.</li>
+          <li>Add green peas, paneer, and spices.</li>
+          <li>Cook for 10 minutes and serve hot.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+  <!-- Palak Paneer Recipe Card -->
+  <div class="recipe-card" data-category="lunch">
+    <div class="card-details">
+      <h3>Palak Paneer</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 40 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="pl3.jpeg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vCDy7vjbz_M?si=IpCrtBxAWsBUslOb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe20')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe20">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>250g paneer, cubed</li>
+          <li>2 cups spinach (palak), blanched & pureed</li>
+          <li>1 onion, finely chopped</li>
+          <li>2 tomatoes, pureed</li>
+          <li>1 tsp ginger-garlic paste</li>
+          <li>1/2 tsp turmeric powder</li>
+          <li>1/2 tsp cumin seeds</li>
+          <li>1/2 tsp garam masala</li>
+          <li>2 tbsp fresh cream</li>
+          <li>1 tbsp oil or butter</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Heat oil, add cumin seeds, onions, and sauté until golden.</li>
+          <li>Add ginger-garlic paste and cook for a minute.</li>
+          <li>Add tomato puree, turmeric, and salt, cook until oil separates.</li>
+          <li>Add spinach puree and cook for 5 minutes.</li>
+          <li>Add paneer cubes and simmer for 5 more minutes.</li>
+          <li>Add garam masala and fresh cream.</li>
+          <li>Serve hot with roti or rice.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+  <!--        DINNER     Recipe Card -->
+  <!-- 12. Kadhai Paneer -->
+  <div class="recipe-card" data-category="dinner">
+    <div class="card-details">
+      <h3>Kadhai Paneer</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 40 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="sahi paneer2.jpeg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/G3-EASdBTOU?si=0_up0w8LyhTGpJSy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe22')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe22">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>200g paneer, cubed</li>
+          <li>1 onion, sliced</li>
+          <li>1 capsicum, chopped</li>
+          <li>2 tomatoes, pureed</li>
+          <li>1 tsp ginger-garlic paste</li>
+          <li>1 tsp cumin seeds</li>
+          <li>1 tsp garam masala</li>
+          <li>1 tsp coriander powder</li>
+          <li>1 tsp red chili powder</li>
+          <li>2 tbsp oil</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Heat oil, sauté cumin seeds, onions, and capsicum.</li>
+          <li>Add ginger-garlic paste, tomato puree, and spices.</li>
+          <li>Add paneer cubes and mix well.</li>
+          <li>Cook for 5 minutes and serve hot.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 11. Soya Chaap Masala -->
+  <div class="recipe-card" data-category="dinner">
+    <div class="card-details">
+      <h3>Soya Chaap Masala</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 35 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="soya chap.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GdFqB3dbGVM?si=_cnHGHeoBW6KgXCP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe23')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe23">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>6 soya chaap sticks</li>
+          <li>1 cup yogurt</li>
+          <li>1 tsp ginger-garlic paste</li>
+          <li>1/2 tsp turmeric powder</li>
+          <li>1 tsp red chili powder</li>
+          <li>1 tsp garam masala</li>
+          <li>1 tbsp lemon juice</li>
+          <li>2 tbsp oil</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Marinate soya chaap with yogurt, spices, and lemon juice for 1 hour.</li>
+          <li>Heat oil, grill or sauté chaap until golden brown.</li>
+          <li>Serve hot with green chutney.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+  <!-- 9. Dum Aloo -->
+  <div class="recipe-card" data-category="dinner">
+    <div class="card-details">
+      <h3>Dum Aloo</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 40 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="dum allu.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3NHDOcmL44?si=nlf_PzfJASEJWJ2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe24')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe24">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>10 baby potatoes</li>
+          <li>1 onion, chopped</li>
+          <li>2 tomatoes, pureed</li>
+          <li>1 tsp ginger-garlic paste</li>
+          <li>1/2 tsp turmeric powder</li>
+          <li>1 tsp red chili powder</li>
+          <li>1 tsp garam masala</li>
+          <li>1/2 cup yogurt</li>
+          <li>2 tbsp oil</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Boil and peel baby potatoes, then fry until golden.</li>
+          <li>In another pan, heat oil, sauté onions, and ginger-garlic paste.</li>
+          <li>Add tomato puree, yogurt, and spices.</li>
+          <li>Add fried potatoes and simmer for 10 minutes.</li>
+          <li>Serve hot with roti or rice.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 8. Bhindi Masala -->
+  <div class="recipe-card" data-category="dinner">
+    <div class="card-details">
+      <h3>Bhindi Masala</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 25 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="bhindi masla.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bWiOWuHM4Ww?si=J5owSMRc25GfrU59" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe25')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe25">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>250g ladyfinger (bhindi), chopped</li>
+          <li>1 onion, sliced</li>
+          <li>1 tomato, chopped</li>
+          <li>1 tsp ginger-garlic paste</li>
+          <li>1/2 tsp turmeric powder</li>
+          <li>1 tsp red chili powder</li>
+          <li>1 tsp garam masala</li>
+          <li>2 tbsp oil</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Heat oil, sauté onions, ginger-garlic paste, and tomatoes.</li>
+          <li>Add spices and mix well.</li>
+          <li>Add chopped bhindi and cook until soft.</li>
+          <li>Serve hot with roti.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+  <!-- 7. Aloo Gobhi -->
+  <div class="recipe-card" data-category="dinner">
+    <div class="card-details">
+      <h3>Aloo Gobhi</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 30 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="alu gobi.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w38kkbGHtn0?si=NKEgnftb4Km8wYZb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe26')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe26">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 potatoes, cubed</li>
+          <li>1 cup cauliflower florets</li>
+          <li>1 onion, chopped</li>
+          <li>1 tomato, chopped</li>
+          <li>1 tsp ginger-garlic paste</li>
+          <li>1/2 tsp turmeric powder</li>
+          <li>1 tsp red chili powder</li>
+          <li>1 tsp garam masala</li>
+          <li>2 tbsp oil</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Heat oil, sauté onions, ginger-garlic paste, and tomatoes.</li>
+          <li>Add spices and mix well.</li>
+          <li>Add potatoes and cauliflower.</li>
+          <li>Cover and cook until vegetables are tender.</li>
+          <li>Serve hot with roti or rice.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+  <!-- Paneer Bhurji Recipe Card -->
+  <div class="recipe-card" data-category="dinner">
+    <div class="card-details">
+      <h3>Paneer Bhurji</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 25 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="panerr bhuji.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EBBIg3BAG38?si=nTpWCklRHnw6OTE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe27')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe27">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>200g paneer, crumbled</li>
+          <li>1 onion, finely chopped</li>
+          <li>1 tomato, finely chopped</li>
+          <li>1 green chili, chopped</li>
+          <li>1/2 tsp cumin seeds</li>
+          <li>1/2 tsp turmeric powder</li>
+          <li>1/2 tsp red chili powder</li>
+          <li>1/2 tsp garam masala</li>
+          <li>2 tbsp oil or butter</li>
+          <li>Salt to taste</li>
+          <li>Fresh coriander for garnish</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Heat oil in a pan, add cumin seeds.</li>
+          <li>Add onions and sauté until golden brown.</li>
+          <li>Add tomatoes, green chili, turmeric, and red chili powder.</li>
+          <li>Cook until tomatoes turn soft.</li>
+          <li>Add crumbled paneer and mix well.</li>
+          <li>Cook for 5 minutes, then add garam masala and salt.</li>
+          <li>Garnish with coriander and serve hot with roti.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+  <!-- Kadhi Pakoda -->
+  <div class="recipe-card" data-category="dinner">
+    <div class="card-details">
+      <h3>Kadhi Pakoda</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 50 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="kp2.jpeg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EeUgHolUC4E?si=7m_kzQDYj5vWTz2S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe28')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe28">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>1 cup besan (gram flour)</li>
+          <li>1 cup curd (yogurt), whisked</li>
+          <li>2 onions, finely chopped</li>
+          <li>1 tsp turmeric powder</li>
+          <li>1 tsp red chili powder</li>
+          <li>1 tsp garam masala</li>
+          <li>1 tsp cumin seeds</li>
+          <li>1/2 tsp mustard seeds</li>
+          <li>2 green chilies, chopped</li>
+          <li>Salt to taste</li>
+          <li>Water as required</li>
+          <li>Oil for frying</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Mix besan, salt, and water to make a thick batter for pakoras.</li>
+          <li>Heat oil and deep-fry small portions of batter until golden brown. Keep aside.</li>
+          <li>In another pan, heat oil, add cumin & mustard seeds.</li>
+          <li>Add onions, green chilies, turmeric, and chili powder. Sauté until golden.</li>
+          <li>Mix curd with besan and water, then add to the pan.</li>
+          <li>Simmer on low heat for 15-20 minutes, stirring occasionally.</li>
+          <li>Add fried pakoras and cook for 5 more minutes.</li>
+          <li>Garnish with coriander and serve hot.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- Malai Kofta Recipe Card -->
+  <div class="recipe-card" data-category="dinner">
+    <div class="card-details">
+      <h3>Malai Kofta</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 50 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="malai kofta.jpeg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wmwnEnnDgmc?si=DKRsMES3NgWIb8UY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe29')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe29">
+        <h3>Ingredients (Kofta):</h3>
+        <ul class="ingredients-list">
+          <li>2 boiled potatoes</li>
+          <li>1/2 cup paneer, grated</li>
+          <li>2 tbsp cornflour</li>
+          <li>Salt to taste</li>
+          <li>Oil for frying</li>
+        </ul>
+        <h3>Ingredients (Gravy):</h3>
+        <ul class="ingredients-list">
+          <li>2 tomatoes, pureed</li>
+          <li>1 onion, chopped</li>
+          <li>1/2 cup fresh cream</li>
+          <li>1 tsp ginger-garlic paste</li>
+          <li>1/2 tsp turmeric powder</li>
+          <li>1 tsp garam masala</li>
+          <li>1 tbsp butter</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Mix mashed potatoes, paneer, cornflour, and salt, shape into balls.</li>
+          <li>Deep-fry until golden brown, set aside.</li>
+          <li>Heat butter, sauté onions, ginger-garlic paste, and tomato puree.</li>
+          <li>Add spices and fresh cream, mix well.</li>
+          <li>Add koftas and cook for 5 minutes.</li>
+          <li>Serve hot with naan or roti.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!--        SNACKS     Recipe Card -->
+  <!-- Vada Pav Recipe Card -->
+  <div class="recipe-card" data-category="snacks">
+    <div class="card-details">
+      <h3>Vada Pav</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 25 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="bada pav.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LE-58cHgDaw?si=irHIqqefm9xBhqbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe30')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe30">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>4 Pav (soft bread rolls)</li>
+          <li>2 large potatoes (boiled and mashed)</li>
+          <li>2 tbsp besan (gram flour)</li>
+          <li>1 tsp mustard seeds</li>
+          <li>1/2 tsp turmeric powder</li>
+          <li>1 tsp ginger-garlic paste</li>
+          <li>1 green chili (chopped)</li>
+          <li>1 tbsp coriander leaves</li>
+          <li>Salt to taste</li>
+          <li>Oil for frying</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Heat oil, add mustard seeds, and sauté green chilies and ginger-garlic paste.</li>
+          <li>Add turmeric, mashed potatoes, salt, and coriander. Mix well.</li>
+          <li>Shape into small balls, dip in besan batter, and deep-fry until golden.</li>
+          <li>Slit Pav, spread chutneys, place vada, and serve hot.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- Pani Puri Recipe Card -->
+  <div class="recipe-card" data-category="snacks">
+    <div class="card-details">
+      <h3>Pani Puri</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 20 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="pani puri.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9klZePX2a4k?si=XndVQYkLo_f3w4Az" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe31')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe31">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>20 puris (crispy hollow balls)</li>
+          <li>1 cup boiled potatoes (mashed)</li>
+          <li>1/2 cup boiled chickpeas</li>
+          <li>1/2 tsp chaat masala</li>
+          <li>Salt to taste</li>
+          <li>2 cups spicy tamarind-mint water</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Mix potatoes, chickpeas, salt, and chaat masala.</li>
+          <li>Poke a hole in each puri, fill with potato mixture.</li>
+          <li>Pour tamarind-mint water and serve immediately.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- Samosa Recipe Card -->
+  <div class="recipe-card" data-category="snacks">
+    <div class="card-details">
+      <h3>Samosa</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 35 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="samosa.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JgV8j4N73uc?si=uy6jgW3dIWSm3olf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe32')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe32">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 cups all-purpose flour</li>
+          <li>3 large potatoes (boiled & mashed)</li>
+          <li>1/2 cup peas</li>
+          <li>1 tsp garam masala</li>
+          <li>1 tsp cumin seeds</li>
+          <li>1/2 tsp turmeric powder</li>
+          <li>Oil for deep frying</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Make a stiff dough using flour, salt, and water.</li>
+          <li>Heat oil, add cumin, mashed potatoes, peas, and spices.</li>
+          <li>Roll dough, cut into semi-circles, fill with potato mixture, and seal.</li>
+          <li>Deep-fry until golden brown and crispy.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- Pav Bhaji Recipe Card -->
+  <div class="recipe-card" data-category="snacks">
+    <div class="card-details">
+      <h3>Pav Bhaji</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 35 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="pav bhaji.jpeg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sAnPUIvPc1I?si=gFRx9GeHQroecYF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe33')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe33">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>4 Pav (soft bread rolls)</li>
+          <li>2 large potatoes (boiled & mashed)</li>
+          <li>1/2 cup peas</li>
+          <li>1/2 cup capsicum (chopped)</li>
+          <li>2 tomatoes (pureed)</li>
+          <li>1 onion (chopped)</li>
+          <li>1 tbsp Pav Bhaji masala</li>
+          <li>2 tbsp butter</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Heat butter, sauté onions, capsicum, and peas.</li>
+          <li>Add tomatoes, mashed potatoes, Pav Bhaji masala, and salt.</li>
+          <li>Cook for 10 minutes, mash everything well.</li>
+          <li>Toast Pav with butter and serve with hot Bhaji.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- 1. French Fries -->
+  <div class="recipe-card" data-category="snacks">
+    <div class="card-details">
+      <h3>French Fries</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 25 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="french fries.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/v6ppawCXLT4?si=fK2-n1_6842bwsvS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe34')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe34">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>3 large potatoes</li>
+          <li>1 tbsp cornflour</li>
+          <li>1/2 tsp salt</li>
+          <li>Oil for frying</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Peel and cut potatoes into thin strips.</li>
+          <li>Soak in cold water for 30 minutes, then pat dry.</li>
+          <li>Coat with cornflour and fry twice for extra crispiness.</li>
+          <li>Sprinkle salt and serve hot.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- 2. Crispy Corn -->
+  <div class="recipe-card" data-category="snacks">
+    <div class="card-details">
+      <h3>Crispy Corn</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 20 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="crispy corn.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XijkYd9ts60?si=mspfdHG0DZv7fEKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe35')">
+        Show/Hide Details
+      </button>
+      <!-- Crispy Corn -->
+      <div class="recipe-details" id="recipe35">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>1 cup sweet corn kernels</li>
+          <li>2 tbsp cornflour</li>
+          <li>1 tbsp rice flour</li>
+          <li>1/2 tsp black pepper powder</li>
+          <li>1/2 tsp red chili powder</li>
+          <li>1/2 tsp chaat masala</li>
+          <li>Salt to taste</li>
+          <li>Oil for deep frying</li>
+          <li>1 tbsp chopped coriander leaves</li>
+          <li>1 green chili (chopped, optional)</li>
+          <li>1/2 lemon (for garnishing)</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Boil the sweet corn for 5 minutes and drain the excess water.</li>
+          <li>In a bowl, mix cornflour, rice flour, black pepper, and salt.</li>
+          <li>Add the boiled corn to this mixture and coat well.</li>
+          <li>Heat oil in a pan and deep-fry the coated corn until golden and crispy.</li>
+          <li>Remove excess oil using a tissue and transfer to a bowl.</li>
+          <li>Sprinkle red chili powder, chaat masala, and coriander leaves.</li>
+          <li>Garnish with chopped green chili and a squeeze of lemon.</li>
+          <li>Serve hot and enjoy crispy, spicy corn!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- 3. Chapp Roll -->
+  <div class="recipe-card" data-category="snacks">
+    <div class="card-details">
+      <h3>Chaap Roll</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 35 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="chaop roll.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Nb9jGUv1osc?si=AmEyUPl6vBoTTru9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe36')">
+        Show/Hide Details
+      </button>
+      <!-- Chapp Roll -->
+      <div class="recipe-details" id="recipe36">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 whole wheat chapatis</li>
+          <li>1/2 cup sliced onions</li>
+          <li>1/2 cup sliced capsicum</li>
+          <li>1/2 cup grated carrot</li>
+          <li>1/2 cup shredded cabbage</li>
+          <li>1/4 cup paneer or boiled chicken (optional)</li>
+          <li>2 tbsp mayonnaise</li>
+          <li>2 tbsp tomato ketchup</li>
+          <li>1/2 tsp red chili powder</li>
+          <li>1/2 tsp chaat masala</li>
+          <li>Salt to taste</li>
+          <li>1/2 tsp black pepper powder</li>
+          <li>1 tbsp oil</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Heat oil in a pan and sauté onions, capsicum, cabbage, and carrots for 2-3 minutes.</li>
+          <li>Add salt, black pepper, red chili powder, and chaat masala. Mix well.</li>
+          <li>Add paneer or boiled chicken (if using) and cook for another 2 minutes.</li>
+          <li>Take a chapati and spread some mayonnaise and tomato ketchup on it.</li>
+          <li>Place the prepared vegetable filling in the center of the chapati.</li>
+          <li>Roll the chapati tightly and secure with a toothpick or wrap in foil.</li>
+          <li>Lightly toast the roll on a tawa for a crispy texture (optional).</li>
+          <li>Cut into halves and serve hot with chutney or ketchup!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- 4. Chilly Potato -->
+  <div class="recipe-card" data-category="snacks">
+    <div class="card-details">
+      <h3>Chilly Potato</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 30 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="chilly potato.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oKCRXPStsRw?si=rE2sdmoEwpK_3us7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe37')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe37">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 large potatoes (cut into strips)</li>
+          <li>2 tbsp cornflour</li>
+          <li>2 tbsp soy sauce</li>
+          <li>1 tbsp chili sauce</li>
+          <li>1 tbsp vinegar</li>
+          <li>1 tsp garlic (chopped)</li>
+          <li>Oil for frying</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Coat potato strips with cornflour and deep-fry until crispy.</li>
+          <li>Sauté garlic, add sauces, vinegar, and fried potatoes.</li>
+          <li>Toss well, garnish with spring onions, and serve.</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 5. Chana Chaat -->
+  <div class="recipe-card" data-category="snacks">
+    <div class="card-details">
+      <h3>Chana Chaat</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 15 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="chana chat.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TtK0UinxTE8?si=pXAa6zrj01CQMitL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe38')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe38">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>1 cup boiled chickpeas</li>
+          <li>1 small onion (chopped)</li>
+          <li>1 small tomato (chopped)</li>
+          <li>1 green chili (chopped)</li>
+          <li>1/2 tsp chaat masala</li>
+          <li>1/2 tsp roasted cumin powder</li>
+          <li>1 tbsp lemon juice</li>
+          <li>Salt to taste</li>
+          <li>Fresh coriander for garnish</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Mix all ingredients in a bowl.</li>
+          <li>Garnish with fresh coriander.</li>
+          <li>Serve immediately as a tangy, spicy snack.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- 6. Papad -->
+  <div class="recipe-card" data-category="snacks">
+    <div class="card-details">
+      <h3>Papad</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 5 mins</span>
+        <span><i class="fas fa-fire"></i> Very Easy</span>
+        <img src="papad.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/x5dkQA2JcZk?si=90oKhaAFF7muMVbT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe39')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe39">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>4 papads (store-bought or homemade)</li>
+          <li>Oil for roasting or frying</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>For roasted papad, heat on an open flame and flip until crispy.</li>
+          <li>For fried papad, deep-fry in hot oil until puffed and crispy.</li>
+          <li>Serve as a crispy side dish or snack.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- 7. Onion Pakoda -->
+  <div class="recipe-card" data-category="snacks">
+    <div class="card-details">
+      <h3>Onion Pakoda</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 25 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="onion.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0Y-YZS_Ecdo?si=5w1dititM3ooyyQG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe40')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe40">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 onions (thinly sliced)</li>
+          <li>1 cup besan (gram flour)</li>
+          <li>1 tsp ajwain (carom seeds)</li>
+          <li>1/2 tsp turmeric powder</li>
+          <li>1/2 tsp red chili powder</li>
+          <li>Salt to taste</li>
+          <li>Water as needed</li>
+          <li>Oil for deep frying</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Mix sliced onions with besan, spices, and a little water to form a thick batter.</li>
+          <li>Heat oil and drop spoonfuls of batter into it.</li>
+          <li>Fry until golden brown and crispy.</li>
+          <li>Serve hot with chutney or tea.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- 8. Momos -->
+  <div class="recipe-card" data-category="snacks">
+    <div class="card-details">
+      <h3>Momos</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 40 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="momos.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/E96Zs559CX0?si=1FWADE3HjdtF9Vu2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe41')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe41">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>1 cup all-purpose flour</li>
+          <li>1/2 cup cabbage (finely chopped)</li>
+          <li>1/2 cup carrots (grated)</li>
+          <li>1 tsp soy sauce</li>
+          <li>1 tsp black pepper</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Make a soft dough using flour and water.</li>
+          <li>Mix cabbage, carrots, soy sauce, salt, and pepper for filling.</li>
+          <li>Roll dough, fill with mixture, shape momos, and steam for 15 minutes.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- 9. Bread Pakoda -->
+  <div class="recipe-card" data-category="snacks">
+    <div class="card-details">
+      <h3>Bread Pakoda</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 20 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="bread pakoda.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xjCEniid4X8?si=bP2AyEU3qqZCyaF0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe42')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe42">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>4 bread slices</li>
+          <li>1 cup besan (gram flour)</li>
+          <li>1 tsp ajwain (carom seeds)</li>
+          <li>1 boiled potato (mashed)</li>
+          <li>1/2 tsp turmeric powder</li>
+          <li>1/2 tsp red chili powder</li>
+          <li>Salt to taste</li>
+          <li>Oil for deep frying</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Mix besan, spices, and water to form a batter.</li>
+          <li>Spread mashed potato on a bread slice, cover with another, and dip in batter.</li>
+          <li>Deep-fry until golden brown.</li>
+          <li>Serve hot with chutney.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- 10. Chowmein -->
+  <div class="recipe-card" data-category="snacks">
+    <div class="card-details">
+      <h3>Chowmein</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 30 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="chawmin.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u3vuq3zaR20?si=dV-61ujFbWFcGQS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe43')">
+        Show/Hide Details
+      </button>
+      <div class="recipe-details" id="recipe43">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 cups boiled noodles</li>
+          <li>1/2 cup capsicum (thinly sliced)</li>
+          <li>1/2 cup cabbage (shredded)</li>
+          <li>1/2 cup carrots (thinly sliced)</li>
+          <li>1 tbsp soy sauce</li>
+          <li>1 tbsp vinegar</li>
+          <li>1 tsp chili sauce</li>
+          <li>1/2 tsp black pepper</li>
+          <li>Salt to taste</li>
+          <li>2 tbsp oil</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Heat oil, add all vegetables, and stir-fry for 2 minutes.</li>
+          <li>Add soy sauce, vinegar, chili sauce, salt, and pepper.</li>
+          <li>Add boiled noodles and toss well.</li>
+          <li>Serve hot, garnished with spring onions.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!--        SWEETS     Recipe Card -->
+  <!-- Gajar Ka Halwa Recipe Card -->
+  <div class="recipe-card" data-category="sweets">
+    <div class="card-details">
+      <h3>Gajar Ka Halwa</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 50 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="gajar ka halwa.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Itmgm80jDJA?si=5JOtOQyPc7vFpGtK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe44')">
+        Show/Hide Details
+      </button>
+      <!-- Gajar Ka Halwa -->
+      <div class="recipe-details" id="recipe44">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>4 cups grated carrots</li>
+          <li>2 cups full cream milk</li>
+          <li>1/2 cup sugar (adjust as per taste)</li>
+          <li>1/4 cup ghee</li>
+          <li>1/2 cup khoya (optional, for richness)</li>
+          <li>1/4 tsp cardamom powder</li>
+          <li>10-12 cashews</li>
+          <li>10-12 almonds (sliced)</li>
+          <li>10-12 raisins</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Heat ghee in a heavy-bottom pan and sauté grated carrots for 5-7 minutes.</li>
+          <li>Add milk and cook on a medium flame until the milk reduces and the carrots soften.</li>
+          <li>Stir occasionally to prevent burning and cook until most of the milk evaporates.</li>
+          <li>Add sugar and mix well; cook for another 5 minutes.</li>
+          <li>Now add khoya (if using) and stir well.</li>
+          <li>Sprinkle cardamom powder and mix.</li>
+          <li>In a separate pan, fry cashews, almonds, and raisins in a little ghee.</li>
+          <li>Garnish the halwa with fried dry fruits.</li>
+          <li>Serve warm and enjoy the rich and delicious Gajar Ka Halwa!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- Kheer Recipe Card -->
+  <div class="recipe-card" data-category="sweets">
+    <div class="card-details">
+      <h3>Kheer</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 40 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="kheer.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/riToqi_sAFA?si=IgERG3RJjj-zYdpV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe45')">
+        Show/Hide Details
+      </button>
+      <!-- Kheer -->
+      <div class="recipe-details" id="recipe45">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>1/2 cup basmati rice</li>
+          <li>4 cups full cream milk</li>
+          <li>1/2 cup sugar (adjust as per taste)</li>
+          <li>1/4 cup chopped cashews, almonds, and pistachios</li>
+          <li>1/4 tsp cardamom powder</li>
+          <li>8-10 saffron strands (optional)</li>
+          <li>1 tbsp ghee</li>
+          <li>10-12 raisins</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Wash and soak rice for 30 minutes.</li>
+          <li>Boil milk in a heavy-bottom pan, then add soaked rice.</li>
+          <li>Cook on a low flame, stirring occasionally, until the rice softens and the milk thickens.</li>
+          <li>Add sugar and mix well until it dissolves completely.</li>
+          <li>Add cardamom powder and saffron strands (if using) and stir.</li>
+          <li>In a small pan, heat ghee and fry the dry fruits until golden.</li>
+          <li>Add the fried dry fruits to the kheer and mix well.</li>
+          <li>Simmer for 5 more minutes until the flavors blend.</li>
+          <li>Serve warm or chilled and enjoy the delicious Kheer!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- Gulab Jamun Recipe Card -->
+  <div class="recipe-card" data-category="sweets">
+    <div class="card-details">
+      <h3>Gulab Jamun</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 45 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="gulab jamun.jpeg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-DnoM36eqhA?si=HkQJGj_rwwM2c2WQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe47')">
+        Show/Hide Details
+      </button>
+      <!-- Gulab Jamun -->
+      <div class="recipe-details" id="recipe47">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>1 cup khoya (mawa), grated</li>
+          <li>1/4 cup all-purpose flour (maida)</li>
+          <li>1/8 tsp baking soda</li>
+          <li>2 tbsp milk (as needed for kneading)</li>
+          <li>2 tbsp ghee (for dough)</li>
+          <li>Oil or ghee (for deep frying)</li>
+          <li>1 cup sugar</li>
+          <li>1 cup water</li>
+          <li>1/2 tsp cardamom powder</li>
+          <li>1/2 tsp rose water (optional)</li>
+          <li>Few saffron strands (optional)</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>In a bowl, mix grated khoya, all-purpose flour, and baking soda.</li>
+          <li>Add ghee and knead gently with milk to form a soft, smooth dough.</li>
+          <li>Divide the dough into small equal-sized balls and ensure there are no cracks.</li>
+          <li>In a pan, heat oil or ghee on low flame and fry the balls until golden brown. Stir continuously for even
+            frying.</li>
+          <li>In another pan, heat water and sugar to make sugar syrup. Boil for 5 minutes.</li>
+          <li>Add cardamom powder, rose water, and saffron strands (if using) to the syrup.</li>
+          <li>Soak the fried Gulab Jamuns in warm sugar syrup for at least 2-3 hours.</li>
+          <li>Serve warm or chilled and enjoy soft and juicy Gulab Jamuns!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- 1. Besan Ke Ladoo -->
+  <div class="recipe-card" data-category="sweets">
+    <div class="card-details">
+      <h3>Besan Ke Ladoo</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 40 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="basan ka lddu.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u50h9LRhVB4?si=qlNXCSiTm4LiC7SW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe48')">
+        Show/Hide Details
+      </button>
+      <!-- Besan Ke Ladoo -->
+      <div class="recipe-details" id="recipe48">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 cups besan (gram flour)</li>
+          <li>3/4 cup ghee</li>
+          <li>3/4 cup powdered sugar</li>
+          <li>1/2 tsp cardamom powder</li>
+          <li>2 tbsp chopped nuts (almonds, cashews, pistachios)</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Heat ghee in a pan on low flame, then add besan.</li>
+          <li>Roast the besan on low flame, stirring continuously until it turns golden brown and aromatic (about 15-20
+            minutes).</li>
+          <li>Add chopped nuts and mix well.</li>
+          <li>Turn off the heat and let the mixture cool slightly.</li>
+          <li>Once warm, add powdered sugar and cardamom powder, and mix thoroughly.</li>
+          <li>Take small portions of the mixture and shape them into round ladoos.</li>
+          <li>Let them set for 10-15 minutes and store in an airtight container.</li>
+          <li>Enjoy homemade besan ladoos!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- 2. Ladoo -->
+  <div class="recipe-card" data-category="sweets">
+    <div class="card-details">
+      <h3>Ladoo</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 30 mins</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="ladu.jpeg" alt="">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0xibItEGLO8?si=aE1UHud7Sg5OSRwV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe49')">
+        Show/Hide Details
+      </button>
+      <!-- Simple Ladoo -->
+      <div class="recipe-details" id="recipe49">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 cups wheat flour or gram flour (besan)</li>
+          <li>3/4 cup ghee</li>
+          <li>3/4 cup powdered sugar</li>
+          <li>1/2 tsp cardamom powder</li>
+          <li>2 tbsp chopped nuts (optional)</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Heat ghee in a pan on low flame.</li>
+          <li>Add flour and roast until golden brown and aromatic (about 15-20 minutes).</li>
+          <li>Add chopped nuts (if using) and mix well.</li>
+          <li>Turn off the heat and let the mixture cool slightly.</li>
+          <li>Once warm, add powdered sugar and cardamom powder, mix thoroughly.</li>
+          <li>Take small portions of the mixture and shape them into round ladoos.</li>
+          <li>Let them set for 10-15 minutes and store in an airtight container.</li>
+          <li>Enjoy delicious homemade ladoos!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- 3. Kaju Katli -->
+  <div class="recipe-card" data-category="sweets">
+    <div class="card-details">
+      <h3>Kaju Katli</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 35 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="kaju.jpeg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7uCqAtSVJU4?si=E13wAa0N-P550WyC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe50')">
+        Show/Hide Details
+      </button>
+      <!-- Kaju Katli -->
+      <div class="recipe-details" id="recipe50">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 cups cashews (kaju)</li>
+          <li>1 cup sugar</li>
+          <li>1/2 cup water</li>
+          <li>1/2 tsp cardamom powder</li>
+          <li>1 tsp ghee (for greasing)</li>
+          <li>Silver leaf (optional, for garnishing)</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Grind cashews into a fine powder in a blender.</li>
+          <li>In a pan, heat water and sugar to make a sugar syrup (1-string consistency).</li>
+          <li>Add cashew powder and mix continuously on low flame.</li>
+          <li>Stir until the mixture thickens and leaves the sides of the pan.</li>
+          <li>Add cardamom powder and mix well.</li>
+          <li>Transfer the mixture to a greased plate and let it cool slightly.</li>
+          <li>Roll it out into a thin sheet using a rolling pin.</li>
+          <li>Cut into diamond shapes and let it set.</li>
+          <li>Decorate with silver leaf if desired and enjoy homemade Kaju Katli!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- 4. Jalebi -->
+  <div class="recipe-card" data-category="sweets">
+    <div class="card-details">
+      <h3>Jalebi</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 50 mins</span>
+        <span><i class="fas fa-fire"></i> Hard</span>
+        <img src="jalebi.jpg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0w471_wMPP0?si=BasXEHTeO4vvl92F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe51')">
+        Show/Hide Details
+      </button>
+      <!-- Jalebi -->
+      <div class="recipe-details" id="recipe51">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>1 cup all-purpose flour (maida)</li>
+          <li>2 tbsp corn flour</li>
+          <li>1/2 tsp baking soda</li>
+          <li>1 cup yogurt</li>
+          <li>Water (as needed to make a batter)</li>
+          <li>1/2 tsp saffron or food color (optional)</li>
+          <li>Ghee or oil (for frying)</li>
+        </ul>
+        <h3>For Sugar Syrup:</h3>
+        <ul class="ingredients-list">
+          <li>1 cup sugar</li>
+          <li>1/2 cup water</li>
+          <li>1/2 tsp cardamom powder</li>
+          <li>1/2 tsp lemon juice</li>
+          <li>1/2 tsp saffron strands (optional)</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>In a bowl, mix flour, corn flour, baking soda, yogurt, and water to make a smooth batter.</li>
+          <li>Cover and let the batter ferment for 6-8 hours or overnight.</li>
+          <li>Heat sugar and water in a pan to make sugar syrup, add saffron, cardamom powder, and lemon juice.</li>
+          <li>Stir the syrup until it reaches a sticky consistency (not too thick).</li>
+          <li>Heat oil or ghee in a pan.</li>
+          <li>Pour the batter into a piping bag or squeeze bottle and make spiral shapes in hot oil.</li>
+          <li>Fry until golden and crisp, then remove and drain excess oil.</li>
+          <li>Immediately dip the jalebis in warm sugar syrup for 30 seconds, then remove.</li>
+          <li>Serve hot and enjoy crispy, sweet jalebis!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- 5. Raj Bhog -->
+  <div class="recipe-card" data-category="sweets">
+    <div class="card-details">
+      <h3>Raj Bhog</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 45 mins</span>
+        <span><i class="fas fa-fire"></i> Medium</span>
+        <img src="rajbhog.jpeg" height="300px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/H_S3QpfmW4w?si=hMdpwexS-60UuVqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe52')">
+        Show/Hide Details
+      </button>
+      <!-- Raj Bhog -->
+      <div class="recipe-details" id="recipe52">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>1 liter full-fat milk</li>
+          <li>2 tbsp lemon juice (mixed with 2 tbsp water)</li>
+          <li>1 cup sugar</li>
+          <li>4 cups water</li>
+          <li>1/4 tsp saffron strands</li>
+          <li>1/4 tsp cardamom powder</li>
+          <li>1/2 tsp rose water (optional)</li>
+          <li>1 tbsp finely chopped pistachios (for garnish)</li>
+          <li>A few drops yellow food color (optional)</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Boil the milk in a pan and add lemon juice while stirring gently.</li>
+          <li>Once the milk curdles, strain it using a muslin cloth and rinse with cold water.</li>
+          <li>Squeeze out excess water and let it hang for 30 minutes to remove moisture.</li>
+          <li>Knead the chhena (paneer) into a smooth dough, then add saffron strands and food color.</li>
+          <li>Divide the dough into small balls and ensure there are no cracks.</li>
+          <li>In a separate pan, boil water and sugar to make a sugar syrup.</li>
+          <li>Add cardamom powder and rose water to the syrup.</li>
+          <li>Drop the chhena balls into the boiling syrup and cover with a lid.</li>
+          <li>Cook for 15-20 minutes on medium heat until they double in size.</li>
+          <li>Turn off the heat and let them soak in the syrup for 2-3 hours.</li>
+          <li>Garnish with chopped pistachios and serve chilled.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- 6. Rasmalai -->
+  <div class="recipe-card" data-category="sweets">
+    <div class="card-details">
+      <h3>Rasmalai</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 60 mins</span>
+        <span><i class="fas fa-fire"></i> Hard</span>
+        <img src="rasmalai.jpeg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/znefLMNyVE8?si=6LzrKfLy82aeZpZl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe53')">
+        Show/Hide Details
+      </button>
+      <!-- Rasmalai -->
+      <div class="recipe-details" id="recipe53">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>1 liter full-fat milk</li>
+          <li>2 tbsp lemon juice (mixed with 2 tbsp water)</li>
+          <li>1 cup sugar</li>
+          <li>4 cups water</li>
+          <li>1/2 tsp cardamom powder</li>
+          <li>1/4 cup chopped pistachios & almonds</li>
+          <li>A few saffron strands</li>
+          <li>1/2 tsp rose water (optional)</li>
+          <li>500 ml milk (for rabri)</li>
+          <li>1/4 cup condensed milk (optional for extra sweetness)</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>Boil 1 liter milk in a pan and add lemon juice while stirring gently.</li>
+          <li>Once the milk curdles, strain using a muslin cloth and rinse with cold water.</li>
+          <li>Squeeze out excess water and hang for 30 minutes to remove moisture.</li>
+          <li>Knead the chhena (paneer) into a smooth dough and make small balls.</li>
+          <li>In a separate pan, boil water and sugar to make a sugar syrup.</li>
+          <li>Add the chhena balls to the boiling syrup and cover with a lid.</li>
+          <li>Cook for 15-20 minutes on medium heat until they double in size.</li>
+          <li>Meanwhile, prepare rabri by boiling 500 ml milk until it thickens slightly.</li>
+          <li>Add cardamom powder, saffron, chopped nuts, and condensed milk.</li>
+          <li>Remove the chhena balls from syrup, squeeze gently, and add to the rabri.</li>
+          <li>Chill for a few hours before serving. Garnish with more nuts.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- 7. Ice Cream -->
+  <div class="recipe-card" data-category="sweets">
+    <div class="card-details">
+      <h3>Ice Cream</h3>
+      <div class="tags">
+        <span><i class="fas fa-clock"></i> 4 hours</span>
+        <span><i class="fas fa-fire"></i> Easy</span>
+        <img src="ice cream.jpeg" height="400px" width="350px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RIBedFEjUbA?si=y7p9u4UjP4gXkveb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button class="show-hide-btn" onclick="toggleRecipe('recipe54')">
+        Show/Hide Details
+      </button>
+      <!-- Ice Cream -->
+      <div class="recipe-details" id="recipe-ice-cream">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+          <li>2 cups heavy cream (chilled)</li>
+          <li>1 cup condensed milk (sweetened)</li>
+          <li>1 tsp vanilla extract</li>
+          <li>1/2 cup chopped nuts or chocolate chips (optional)</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions-list">
+          <li>In a mixing bowl, whip the heavy cream until soft peaks form.</li>
+          <li>Add condensed milk and vanilla extract, then gently fold everything together.</li>
+          <li>Mix in chopped nuts, chocolate chips, or any desired add-ins.</li>
+          <li>Pour the mixture into an airtight container.</li>
+          <li>Freeze for at least 6-8 hours or overnight.</li>
+          <li>Scoop and serve chilled!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <img src="logo.jpeg" alt="logo" style="clip-path: circle(50%); height: 150px" />
+      <p>&copy; <b>2023 My Recipe Website</b></p>
+      <br />
+      <nav>
+        <p><a href="about.html">about</a></p>
+        <br />
+        <br>
+        <p><a href="contact.html">contact Details</a></p>
+        <br />
+        <br>
+        <p><a href="#"><b>Privacy Policy</b></a></p>
+        <br />
+        <br>
+      </nav>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
