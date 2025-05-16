@@ -312,3 +312,132 @@ p {
 .tags i {
   margin-right: 5px;
 }
+/* Mobile devices (phones, less than 600px) */
+@media (max-width: 600px) {
+  .container, .link {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  #logo, #chef1, #Image1, #Image2, #lastlogo {
+    position: static;
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .recipe-card {
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 10px;
+  }
+
+  #searchBtn {
+    width: 100%;
+  }
+
+  .category-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a {
+    margin-right: 20px;
+  }
+
+  footer nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* Tablets (portrait and landscape, 600px - 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .recipe-card {
+    width: 90%;
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .search-container {
+    flex-direction: row;
+    padding: 0 10px;
+  }
+
+  .category-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  a {
+    margin-right: 50px;
+  }
+
+  #logo, #chef1, #Image1, #Image2, #lastlogo {
+    max-width: 120px;
+    height: auto;
+  }
+}
+
+
+/* Small desktops/laptops (993px - 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+
+  .recipe-card {
+    width: 100%;
+    height: auto;
+  }
+
+  #logo, #chef1, #Image1, #Image2, #lastlogo {
+    max-width: 150px;
+  }
+
+  a {
+    margin-right: 150px;
+  }
+}
+
+
+/* Large screens (above 1200px) */
+@media (min-width: 1201px) {
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .recipe-card {
+    width: 750px;
+    height: 450px;
+  }
+
+  .search-container {
+    max-width: 600px;
+  }
+
+  #logo, #chef1, #Image1, #Image2, #lastlogo {
+    max-width: 200px;
+  }
+
+  a {
+    margin-right: 250px;
+  }
+}
