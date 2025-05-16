@@ -29,7 +29,7 @@ body {
   height: 50px;
   width: 1400px;
   background:linear-gradient(to right,#d10134,#f8ba1c,#fd5f5c);
-
+text-decoration: none;
 }
 a{
   margin-right: 250px;
@@ -74,13 +74,13 @@ height: auto;
 }
 .recipe-card {
     background: white;
-    border-radius: 8px;
+    border-radius: 2px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
 }
 .recipe-card h2 {
-    color: #333;
+    color: #b3a9a9;
     margin-top: 0;
     border-bottom: 2px solid #080808;
     padding-bottom: 5px;

@@ -1,67 +1,29 @@
- // contact.js
-document.addEventListener('DOMContentLoaded', () => {
-    const contactForm = document.getElementById('contactForm');
-    const recipeForm = document.getElementById('recipeForm');
-
-    // Contact Form Validation
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        if(validateForm(contactForm)) {
-            showSuccessMessage('contact');
-        }
-    });
-
-    // Recipe Form Validation
-    recipeForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        if(validateForm(recipeForm)) {
-            showSuccessMessage('recipe');
-        }
-    });
-
-    // Real-time Validation
-    document.querySelectorAll('input, textarea').forEach(input => {
-        input.addEventListener('input', () => {
-            validateField(input);
-        });
-    });
-});
-
-function validateForm(form) {
-    let isValid = true;
-    const inputs = form.querySelectorAll('input, textarea, select');
-    
-    inputs.forEach(input => {
-        if(!validateField(input)) isValid = false;
-    });
-
-    return isValid;
-}
-
-function validateField(input) {
-    const errorElement = input.parentElement.querySelector('.error-message');
-    
-    if(input.checkValidity()) {
-        errorElement.style.display = 'none';
-        input.style.borderColor = '#eee';
-        return true;
+function toggleRecipe(recipeId) {
+    const recipeDetails = document.getElementById(recipeId);
+    if (recipeDetails.style.display === "none" || recipeDetails.style.display === "") {
+        recipeDetails.style.display = "block";
     } else {
-        errorElement.textContent = input.validationMessage;
-        errorElement.style.display = 'block';
-        input.style.borderColor = '#e74c3c';
-        return false;
+        recipeDetails.style.display = "none";
     }
 }
-
-function showSuccessMessage(type) {
-    const message = type === 'contact' 
-        ? 'Thank you for your message! We will respond within 24 hours.' 
-        : 'Recipe submitted successfully! Our team will review it shortly.';
-    
-    Swal.fire({
-        icon: 'success',
-        title: 'Success!',
-        text: message,
-        confirmButtonColor: '#ff6b6b'
+// Add this to your JS file
+document.querySelectorAll('.category-buttons button').forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove active class from all buttons
+      document.querySelectorAll('.category-buttons button').forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      
+      // Get selected category
+      const category = button.dataset.category;
+      const cards = document.querySelectorAll('.recipe-card');
+      
+      // Show/hide cards
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
     });
-}
+  });
